@@ -14,10 +14,10 @@ private:
     void resize() {
         cout << "Resize: " << capacity << " -> " << capacity * 2 << endl;
 
-        T newCapacity = capacity * 2;
+        size_t newCapacity = capacity * 2;
         T* newData = new T[newCapacity];
 
-        for (int i=0; i<length; i++) {
+        for (size_t i=0; i<length; i++) {
             newData[i] = data[i];
         }
 
